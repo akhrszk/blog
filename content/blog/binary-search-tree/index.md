@@ -36,7 +36,6 @@ JavaScriptで実装したものが以下
 
 `gist:akhrszk/537b19c384db3ce141dcbb547a2cfb4c#BinarySearchTree.js`
 
-
 上で紹介した `insert`, `find` と後で説明する `remove` 、これらに加えて、二分探索木には、最小値は**一番左**、最大値は**一番右**に来るという性質があるので、それを利用して最小値と最大値をそれぞれ返す `min`, `max` というメソッドも実装した。
 
 ## 動かしてみる
