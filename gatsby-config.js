@@ -3,12 +3,13 @@ module.exports = {
     title: `Akihiro's Tech blog`,
     author: {
       name: `Suzuki Akihiro`,
-      summary: `who lives and works in Tokyo building useful things.`,
+      summary: `who lives and works in Tokyo, Japan.`,
     },
     description: `技術ブログ`,
     siteUrl: `https://akihr.io/`,
     social: {
       twitter: `akhr_s`,
+      github: `akhrszk`,
     },
   },
   plugins: [
