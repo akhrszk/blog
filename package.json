@@ -4,6 +4,15 @@
   "description": "My blog powered by Gatsby and Markdown",
   "version": "1.0.0",
   "author": "Akihiro Suzuki",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -21,6 +30,7 @@
     "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-remark-copy-linked-files": "^5.2.0",
     "gatsby-remark-embed-gist": "^1.2.1",
+    "gatsby-remark-emoji": "^0.0.3",
     "gatsby-remark-images": "^6.2.0",
     "gatsby-remark-prismjs": "^6.2.0",
     "gatsby-remark-responsive-iframe": "^5.2.0",
@@ -39,14 +49,5 @@
     "prettier": "^2.4.1"
   },
   "license": "0BSD",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }
+  "main": "n/a"
 }
