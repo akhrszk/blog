@@ -47,7 +47,9 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          <strong>{author.name}</strong>
+          <br />
+          {author?.summary || null}
           <br />
           <a href={`https://github.com/${social?.github || ``}`}><FontAwesomeIcon icon={faGithub} /></a>
           {` `}
