@@ -13,6 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
+          filter: { fields: { slug: { regex: "/articles/" } } }
           limit: 1000
         ) {
           nodes {
@@ -69,6 +70,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+
+    createNodeField({
+      name: `sourceInstanceName`,
+      node,
+      value: getNode(node.parent).sourceInstanceName
+    })
   }
 }
 
@@ -95,6 +102,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Social {
       twitter: String
+      github: String
     }
 
     type MarkdownRemark implements Node {

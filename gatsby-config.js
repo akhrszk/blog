@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Akihiro's Tech blog`,
     author: {
-      name: `Suzuki Akihiro`,
-      summary: `who lives and works in Tokyo, Japan.`,
+      name: `鈴木 章弘 (Suzuki Akihiro)`,
+      summary: `バックエンドエンジニア(TypeScript & マイクロサービス)`,
     },
     description: `技術ブログ`,
     siteUrl: `https://akihr.io/`,
@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
     {
@@ -91,7 +91,8 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                  filter: { fields: { slug: { regex: "/articles/" } } }
                 ) {
                   nodes {
                     excerpt
