@@ -1,0 +1,24 @@
+---
+title: 鈴木 章弘
+date: "2022-02-06T02:38:10+0900"
+---
+
+1991.08.14
+
+大学は物理学科に進学するも、2012 年 数値計算の講義で C 言語に触れたことを切っ掛けに、物理学の道からプログラマーに転身。アルバイト、インターン、会社員、個人開発を経て 2019 年 フリーランスエンジニアとして活動開始。
+
+##### 最終学歴
+
+東京理科大学理学部第一部物理学科 卒
+
+##### 好物
+
+寿司、ステーキ、ラーメン
+
+### リンク
+
+- [Akihiro's Tech Blog](http://akihr.io)
+- [GitHub - akhrszk (Akihiro Suzuki)](https://github.com/akhrszk)
+- [Twitter - Akihiro Suzuki (@akhr_s)](https://twitter.com/akhr_s)
+- [Qiita - akhrszk](https://qiita.com/akhrszk)
+- [Zenn - akhr_s](https://zenn.dev/akhr_s)
