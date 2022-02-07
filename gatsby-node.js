@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
-          filter: { fields: { slug: { regex: "/articles/" } } }
+          filter: { fields: { slug: { regex: "/entries/" } } }
           limit: 1000
         ) {
           nodes {
@@ -38,7 +38,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMarkdownRemark.nodes
 
   // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // But only if there's at least one markdown file found at "content/entries" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
@@ -70,12 +70,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
-
-    createNodeField({
-      name: `sourceInstanceName`,
-      node,
-      value: getNode(node.parent).sourceInstanceName
-    })
   }
 }
 
@@ -87,7 +81,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   // Also explicitly define the Markdown frontmatter
   // This way the "MarkdownRemark" queries will return `null` even when no
-  // blog posts are stored inside "content/blog" instead of returning an error
+  // blog posts are stored inside "content/entries" instead of returning an error
   createTypes(`
     type SiteSiteMetadata {
       author: Author
