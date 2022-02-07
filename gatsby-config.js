@@ -92,7 +92,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] }
-                  filter: { fields: { slug: { regex: "/articles/" } } }
+                  filter: { fields: { slug: { regex: "/entries/" } } }
                 ) {
                   nodes {
                     excerpt

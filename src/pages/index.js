@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
         <Seo title="All posts" />
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
+          No blog posts found. Add markdown posts to "content/entries" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js).
         </p>
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { slug: { regex: "/articles/" } } }
+      filter: { fields: { slug: { regex: "/entries/" } } }
     ) {
       nodes {
         excerpt
