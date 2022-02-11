@@ -30,7 +30,7 @@ date: "2022-01-20T00:01:39+0900"
 
 とりあえず Next.js 立ち上げ
 
-```zsh
+```bash
 yarn dev
 ```
 
@@ -40,7 +40,7 @@ yarn dev
 
 storybook の立ち上げ
 
-```zsh
+```bash
 yarn storybook
 ```
 
@@ -50,7 +50,7 @@ yarn storybook
 
 Lint ツールは ESLint と Prettier を入れてます。
 
-```zsh
+```bash
 # Lintチェック
 yarn lint
 
