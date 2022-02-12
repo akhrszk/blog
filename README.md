@@ -1,4 +1,4 @@
-# Akihiro's Tech blog
+# Tech Blog - Akihiro Suzuki
 
 Welcome :wave:
 

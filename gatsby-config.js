@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Akihiro's Tech blog`,
+    title: `Tech Blog - Akihiro Suzuki`,
     author: {
       name: `鈴木 章弘 (Suzuki Akihiro)`,
       summary: `バックエンドエンジニア(TypeScript & マイクロサービス)`,
