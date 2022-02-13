@@ -1,3 +1,5 @@
+import React from "react"
+
 // custom typefaces
 import "typeface-montserrat"
 import "typeface-merriweather"
@@ -10,3 +12,9 @@ import "./src/style.css"
 import "prismjs/themes/prism.css"
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
+
+import { ThemeProvider } from "./src/lib/theme"
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>{element}</ThemeProvider>
+)
