@@ -8,8 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { GitHub, Twitter } from "./social"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -34,9 +33,9 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div className="flex gap-4">
       <StaticImage
-        className="bio-avatar"
+        className="rounded-full"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.png"
@@ -49,13 +48,13 @@ const Bio = () => {
         <p>
           <strong>{author.name}</strong>
           {` `}
-          <a href={`https://github.com/${social?.github || ``}`}><FontAwesomeIcon icon={faGithub} /></a>
+          <Twitter username={social?.twitter} />
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}><FontAwesomeIcon icon={faTwitter} /></a>
+          <GitHub username={social?.github} />
           <br />
           {author?.summary || null}
           <br />
-          <Link to='/about/'>
+          <Link to='/about/' className="text-primary underline">
             <span>profile</span>
           </Link>
         </p>

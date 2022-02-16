@@ -27,19 +27,19 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <ol className="list-none py-8">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
               <article
-                className="post-list-item"
+                className="flex flex-col gap-1 my-8"
                 itemScope
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h2 className="text-primary text-3xl font-semibold">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
