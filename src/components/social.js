@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 export const GitHub = ({ username }) => (
-  <a className="text-[#181717]" href={`https://github.com/${username || ``}`}>
+  <a className="text-[#181717] dark:text-white" href={`https://github.com/${username || ``}`}>
     <FontAwesomeIcon icon={faGithub} />
   </a>
 )

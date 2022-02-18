@@ -27,7 +27,8 @@
 
 @layer base {
   body {
-    @apply text-base text-slate-900 font-serif;
+    @apply bg-white text-base text-slate-900 font-serif;
+    @apply dark:bg-slate-900 dark:text-white;
   }
 
   h1,
@@ -41,6 +42,7 @@
 
   h1 {
     @apply font-black text-4xl text-black;
+    @apply dark:text-white;
   }
 
   h2 {
@@ -113,7 +115,7 @@
 
   .markdown blockquote {
     @apply border-l-4 border-solid border-l-border;
-    @apply text-gray-500 italic text-lg pl-6 py-1;
+    @apply text-gray-500 italic text-lg pl-2 py-1;
     @apply mb-8;
   }
 

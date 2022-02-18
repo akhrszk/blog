@@ -12,7 +12,7 @@ import "./src/global.css"
 // import "./src/style.css"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "prism-themes/themes/prism-lucario.min.css"
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
 

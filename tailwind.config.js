@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/**/*.{js,jsx}",
   ],
@@ -36,7 +37,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#005b99',
+        primary: '#0284c7',
         accent: '#a0041e',
         border: '#d1dce5',
       }
