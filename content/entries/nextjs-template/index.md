@@ -75,6 +75,8 @@ React のテストについては以下を参照
 
 GitHub Actions の設定も入れました。
 
+Push すると Lint と Test が回ります :thumbsup:
+
 ```yaml
 name: Lint And Test
 on:
@@ -101,4 +103,4 @@ jobs:
         run: yarn build
 ```
 
-GitHub に push すると Lint と Test が回ります :thumbsup:
+以上、Next.js のテンプレートの紹介でした。

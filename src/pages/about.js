@@ -11,9 +11,17 @@ const About = ({ data, location }) => {
       <Seo title={frontmatter.title} description={frontmatter.description || excerpt} />
       <article>
         <header>
-          <h1>{frontmatter.title}</h1>
+          <h1
+            className="text-4xl font-bold my-4"
+            itemProp="headline"
+          >
+            {frontmatter.title}
+          </h1>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: html }} />
+        <section
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </article>
     </Layout>
   )

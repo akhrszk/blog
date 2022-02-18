@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Divider from "../components/Divier"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -22,19 +23,25 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1
+            className="text-4xl font-bold my-4"
+            itemProp="headline"
+          >
+            {post.frontmatter.title}
+          </h1>
+          <p className="text-xl mb-8">{post.frontmatter.date}</p>
         </header>
         <section
+          className="markdown"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
+        <Divider />
+        <footer className="py-6">
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className="my-8">
         <ul
           style={{
             display: `flex`,
@@ -46,14 +53,22 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                className="text-primary underline"
+              >
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link
+                to={next.fields.slug}
+                rel="next"
+                className="text-primary underline"
+              >
                 {next.frontmatter.title} →
               </Link>
             )}

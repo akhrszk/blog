@@ -44,10 +44,10 @@ Your new Gatsby site has been successfully bootstrapped. Start developing it by 
 
 Vercel は Next.js の開発元で、Next.js で作ったアプリをホスティングするの使われることが多いですが、Next.js の他にも Gatsby や CRA、Nuxt その他色々なフレームワークに対応しています。
 
-Gatsby の Deploy 手順は公式の以下ページに手順が書いてあるのだが、Vercel の管理画面から GitHub のレポジトリと連携する**だけ**です。非常に便利。
+Deploy は公式の以下のページに書いてある手順の通りですが、Vercel の管理画面から GitHub のリポジトリと連携するだけです。非常に便利。
 
 [How to Deploy a Gatsby Site with Vercel #Vercel for Git](https://vercel.com/guides/deploying-gatsby-with-vercel#vercel-for-git)
 
-新しく記事を追加したときも、GitHub に Push したら、自動でデプロイが走る。便利過ぎる。(語彙力)
+新しく記事を追加するときも、GitHub に Push したら、自動でデプロイが走る。便利過ぎる。(語彙力)
 
 以上、Gatsby でブログ作成 から デプロイまでの紹介でした。

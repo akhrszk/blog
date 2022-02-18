@@ -1,0 +1,134 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+
+/**
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
+@tailwind components;
+
+/**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
+@tailwind utilities;
+
+/**
+  * Use this directive to control where Tailwind injects the responsive
+  * variations of each utility.
+  *
+  * If omitted, Tailwind will append these classes to the very end of
+  * your stylesheet by default.
+  */
+/* @tailwind screens; */
+
+@layer base {
+  body {
+    @apply bg-white text-base text-slate-900 font-serif;
+    @apply dark:bg-slate-900 dark:text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans leading-tight tracking-tight;
+  }
+
+  h1 {
+    @apply font-black text-4xl text-black;
+    @apply dark:text-white;
+  }
+
+  h2 {
+    @apply font-bold text-3xl;
+  }
+
+  h3 {
+    @apply font-bold text-2xl;
+  }
+
+  h4 {
+    @apply font-bold text-xl;
+  }
+
+  h5 {
+    @apply font-bold text-lg;
+  }
+
+  h6 {
+    @apply font-bold text-base;
+  }
+}
+
+@layer components {
+  /* Heading */
+
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply mt-12 mb-6;
+  }
+
+  .markdown a {
+    @apply text-primary;
+  }
+
+  /* Prose */
+
+  .markdown p {
+    @apply leading-6 mb-8;
+  }
+
+  .markdown ul,
+  .markdown ol {
+    @apply mb-8 ml-8;
+  }
+
+  .markdown ul {
+    @apply list-disc;
+  }
+
+  .markdown ol {
+    @apply list-decimal;
+  }
+
+  .markdown li {
+    @apply mb-2;
+  }
+
+  .markdown li:last-child {
+    @apply mb-0;
+  }
+
+  .markdown li > ul {
+    @apply mt-4 mb-0 ml-4;
+  }
+
+  .markdown blockquote {
+    @apply border-l-4 border-solid border-l-border;
+    @apply text-gray-500 italic text-lg pl-2 py-1;
+    @apply mb-8;
+  }
+
+  .markdown blockquote > :last-child {
+    @apply mb-0;
+  }
+
+  .markdown table {
+    @apply w-full border border-border border-collapse mb-8;
+  }
+
+  .markdown td,
+  .markdown th {
+    @apply border border-border px-2 py-1;
+  }
+}
