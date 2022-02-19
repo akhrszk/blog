@@ -28,7 +28,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <>
       <Helmet htmlAttributes={{ class: theme }} />
-      <div className="max-w-xl container my-10 px-5" data-is-root-path={isRootPath}>
+      <div className="max-w-2xl container my-10 px-5" data-is-root-path={isRootPath}>
         <header className="mb-8 flex items-start">
           {header}
           {isRootPath && <ThemeToggleButton className="block shrink-0" />}

@@ -34,16 +34,18 @@ const Bio = () => {
 
   return (
     <div className="flex gap-4">
-      <StaticImage
-        className="rounded-full"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
+      <div className="flex-shrink-0">
+        <StaticImage
+          className="rounded-full"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.png"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+      </div>
       {author?.name && (
         <p>
           <strong>{author.name}</strong>
