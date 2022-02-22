@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { GitHub, Twitter } from "./social"
 
 const Bio = () => {
@@ -18,6 +18,7 @@ const Bio = () => {
           author {
             name
             summary
+            pic
           }
           social {
             twitter
@@ -31,19 +32,17 @@ const Bio = () => {
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+  console.log(author)
 
   return (
     <div className="flex gap-4">
       <div className="flex-shrink-0">
-        <StaticImage
+        <img
           className="rounded-full"
-          layout="fixed"
-          formats={["auto", "webp", "avif"]}
-          src="../images/profile-pic.png"
+          src={author.pic}
           width={50}
           height={50}
-          quality={95}
-          alt="Profile picture"
+          alt="profile"
         />
       </div>
       {author?.name && (
