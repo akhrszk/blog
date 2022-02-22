@@ -17,7 +17,11 @@ const Seo = ({ description, lang, meta, title }) => {
         site {
           siteMetadata {
             title
+            author {
+              pic
+            }
             description
+            siteUrl
             social {
               twitter
             }
@@ -29,6 +33,9 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+
+  const profilePic = site.siteMetadata?.siteUrl?.replace(/\/$/, ``) + `/` + site.siteMetadata?.author?.pic?.replace(/^\//, ``)
+  const metaImage = profilePic
 
   return (
     <Helmet
@@ -49,6 +56,10 @@ const Seo = ({ description, lang, meta, title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: metaImage,
         },
         {
           property: `og:type`,

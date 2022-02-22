@@ -4,6 +4,8 @@ module.exports = {
     author: {
       name: `鈴木 章弘 (Suzuki Akihiro)`,
       summary: `バックエンドエンジニア(TypeScript & マイクロサービス)`,
+      // Path to the image placed in the 'static' folder, in the project's root directory.
+      pic: `/profile-pic.png`,
     },
     description: `技術ブログ`,
     siteUrl: `https://akihr.io/`,
