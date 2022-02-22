@@ -24,13 +24,13 @@ module.exports = {
         name: `content`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -128,7 +128,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#A0041E`,
         display: `minimal-ui`,
-        icon: `src/images/sushi.svg`, // This path is relative to the root of the site.
+        icon: `static/sushi.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
