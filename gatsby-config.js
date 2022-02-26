@@ -112,7 +112,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Akihiro's Tech blog RSS Feed",
+            title: "Tech Blog - Akihiro Suzuki RSS Feed",
           },
         ],
       },
@@ -120,7 +120,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Akihiro's Tech blog`,
+        name: `Tech Blog - Akihiro Suzuki`,
         short_name: `TechBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
