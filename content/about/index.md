@@ -17,7 +17,7 @@ date: "2022-02-06T02:38:10+0900"
 
 ### リンク
 
-- [Tech Blog - Akihiro Suzuki](http://akihr.io)
+- [Tech Blog - Akihiro Suzuki](https://akihiro.dev/)
 - [GitHub - akhrszk (Akihiro Suzuki)](https://github.com/akhrszk)
 - [Twitter - Akihiro Suzuki (@akhr_s)](https://twitter.com/akhr_s)
 - [Qiita - akhrszk](https://qiita.com/akhrszk)

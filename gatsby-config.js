@@ -8,7 +8,7 @@ module.exports = {
       pic: `/profile-pic.png`,
     },
     description: `技術ブログ`,
-    siteUrl: `https://akihr.io/`,
+    siteUrl: `https://akihiro.dev/`,
     social: {
       twitter: `akhr_s`,
       github: `akhrszk`,

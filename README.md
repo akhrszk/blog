@@ -2,4 +2,4 @@
 
 Welcome :wave:
 
-You can view my blog :point_right: https://akihr.io/
+You can view my blog :point_right: https://akihiro.dev/

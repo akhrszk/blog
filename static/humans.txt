@@ -1,5 +1,5 @@
 Author: Akihiro Suzuki
-Site: https://akihr.io
+Site: https://akihiro.dev/
 Location: Tokyo, Japan
 
 Twitter: @akhr_s

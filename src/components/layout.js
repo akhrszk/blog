@@ -37,7 +37,7 @@ const Layout = ({ location, title, children }) => {
         <footer>
           &copy;
           {` `}
-          <Link to="/">akihr.io</Link>
+          <Link to="/">akihiro.dev</Link>
           {` `}
           - {new Date().getFullYear()}, Built with
           {` `}
