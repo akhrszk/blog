@@ -7,13 +7,11 @@ date: "2022-03-25T19:42:25+0900"
 
 電子工作まったくの初心者ですが、今回キーボードの自作に挑戦してみました。:tada:
 
-私も最初こそ身構えていましたが、今回購入した Corne Cherry のキットは半田付けいらずでとても簡単に組み立てることが出来ました。（もはや電子工作と呼ぶにはおこがましい程に簡単でした 笑）
+私も最初こそ身構えていましたが、今回購入した Corne Cherry のキットははんだ付けいらずでとても簡単に組み立てることが出来ました。（もはや電子工作と呼ぶにはおこがましい程に簡単でした 笑）
 
-私が購入したものは遊舎工房で販売されている[こちら](https://shop.yushakobo.jp/products/corne-cherry-v3)です。
+[![半田付けのいらない42キー スプリットキーボードキット](https://bit-trade-one.co.jp/selfmadekb/wp-content/uploads/sites/6/2020/07/Corne%E3%83%90%E3%83%8A%E3%83%BC.jpg)](https://bit-trade-one.co.jp/selfmadekb/adskbcc/)
 
-[![遊舎工房 Corne Cherry V3](https://cdn.shopify.com/s/files/1/0532/0880/9633/products/cornecherryv3_1_470x.jpg?v=1612412)](https://shop.yushakobo.jp/products/corne-cherry-v3)
-
-**キースイッチ**と**キーキャップ**は同梱されてないので、好みのものを選んで購入しましょう。
+**キースイッチ**と**キーキャップ**は同梱されていないので、好みのものを選んで購入しましょう。
 
 **ただし、基盤には MX 用のソケットが付いているため、必然的にキースイッチは MX のものを選ぶことになります。**
 
