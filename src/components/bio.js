@@ -44,13 +44,13 @@ const Bio = () => {
           alt="profile"
         />
       </div>
-      {author?.name && (
+      {author && (
         <p>
-          <strong>{author.name}</strong>
+          {author.name && <strong>{author.name}</strong>}
           {` `}
-          <Twitter username={social?.twitter} />
+          {social?.twitter && <Twitter username={social.twitter} />}
           {` `}
-          <GitHub username={social?.github} />
+          {social?.github && <GitHub username={social.github} />}
           <br />
           {author?.summary || null}
           <br />
