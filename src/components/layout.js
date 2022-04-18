@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { ThemeContext } from "../lib/theme"
 import ThemeToggleButton from "./ThemeToggleButton"
+import * as fontawesome from "@fortawesome/fontawesome-svg-core"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -25,9 +26,13 @@ const Layout = ({ location, title, children }) => {
 
   const { theme } = useContext(ThemeContext)
 
+  fontawesome.config.autoAddCss = false
+
   return (
     <>
-      <Helmet htmlAttributes={{ class: theme }} />
+      <Helmet htmlAttributes={{ class: theme }}>
+        <style>{fontawesome.dom.css()}</style>
+      </Helmet>
       <div className="max-w-2xl container my-10 px-5" data-is-root-path={isRootPath}>
         <header className="mb-8 flex items-start">
           {header}
