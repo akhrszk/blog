@@ -61,7 +61,7 @@ https://github.com/akhrszk/gorouter
 
 宣言されたルーティグ情報を、トライ木(_trie_)と呼ばれるツリー構造で保持しており、高速なパスマッチングを実現しています。
 
-以前、[二分探索木を JavaScript で実装](/binary-search-tree/)しましたが、あのイメージです。
+以前、[二分探索木を JavaScript で実装](/entries/binary-search-tree/)しましたが、あのイメージです。
 
 [gorouter](https://github.com/akhrszk/gorouter) では、以下の機能を実現しています。
 
