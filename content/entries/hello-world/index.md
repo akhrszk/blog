@@ -38,13 +38,11 @@ Your new Gatsby site has been successfully bootstrapped. Start developing it by 
 
 ## Vercel にホスティング
 
-[Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) というのもありますが、私は [Vercel](https://vercel.com/) を選びました。
+[Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) というのもありますが、私は [Vercel](https://vercel.com/) を選びました。(ホスティングサービスのはその他にも色々選択肢があるので好みのものを選ぶと良いです。)
 
-両サービスをしっかり比較したわけではなので理由はとくに書きません。その他にも色々なホスティングサービスがあるので好きなところを選ぶと良いと思います。
+Vercel は Next.js の開発元ということもあり、Next.js で作ったアプリケーションをホスティングするのに使われることが多いですが、Next.js の他にも Gatsby や CRA、Nuxt.js など、その他色々なフレームワークに対応しています。
 
-Vercel は Next.js の開発元で、Next.js で作ったアプリをホスティングするの使われることが多いですが、Next.js の他にも Gatsby や CRA、Nuxt その他色々なフレームワークに対応しています。
-
-Deploy は公式の以下のページに書いてある手順の通りですが、Vercel の管理画面から GitHub のリポジトリと連携するだけです。非常に便利。
+Deploy は公式の以下のページに書いてある手順の通りですが、Vercel の管理画面から GitHub のリポジトリと連携するだけです。これだけです。
 
 [How to Deploy a Gatsby Site with Vercel #Vercel for Git](https://vercel.com/guides/deploying-gatsby-with-vercel#vercel-for-git)
 

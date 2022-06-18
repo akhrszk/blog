@@ -1,11 +1,11 @@
 ---
-title: Next.jsのサンプルのDockerfileがとても参考になる
+title: Next.jsのサンプルのDockerfileが参考になる
 date: "2022-05-02T18:42:11+0900"
 ---
 
 今回のエントリーは、完全自分用のメモですが、
 
-Dockerfile の書き方に迷ったら Next.js のサンプルの Dockerfile を参考にすると良いかも
+Dockerfile の書き方に迷ったら Next.js のサンプルを参考にすると良いかも
 
 **マルチステージビルド** 、 **実行用のユーザー作成** 、 **軽量イメージの利用** など本番環境の Dockerfile を書く際の基本が押さえられている。
 
