@@ -32,15 +32,3 @@ useInterval の実装については Qiita と Zenn に技術記事を投稿し�
 
 - [Qiita - React で setInterval を使うためのカスタムフック useInterval を作る](https://qiita.com/akhrszk/items/e7971a5db8fb718e8818)
 - [Zenn - React で setInterval を使うためのカスタムフック useInterval を作る](https://zenn.dev/akhr_s/articles/065e18ab3c4883)
-
-## サンプルアプリ
-
-[![サンプルアプリ](./react-clock.png)](https://akhrszk.github.io/react-clock/)
-
-この `useInterval` を使ってタイマーアプリを作ったものを以下のレポジトリで公開しています。
-
-https://github.com/akhrszk/react-clock
-
-GitHub Pages にデプロイしているので、動くものを見たい方は以下。
-
-https://akhrszk.github.io/react-clock/

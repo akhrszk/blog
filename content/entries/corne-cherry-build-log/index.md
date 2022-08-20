@@ -59,7 +59,7 @@ GitHub のユーザー名のディレクトリとその配下にいくつかの�
 
 keymap.c を編集してオリジナルのキーマップを作成していきます。
 
-キーコードは、以下に一覧があるのでこれを見ながらオリジナルのキーマップを作っていきます。
+キーコード一覧は以下
 
 - https://docs.qmk.fm/#/keycodes_basic
 - https://docs.qmk.fm/#/keycodes?id=basic-keycodes
