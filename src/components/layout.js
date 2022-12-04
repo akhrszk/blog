@@ -19,7 +19,9 @@ const Layout = ({ location, title, children }) => {
   } else {
     header = (
       <h4 className="flex-grow">
-        <Link className="text-primary" to="/">{title}</Link>
+        <Link className="text-primary" to="/">
+          {title}
+        </Link>
       </h4>
     )
   }
@@ -33,7 +35,10 @@ const Layout = ({ location, title, children }) => {
       <Helmet htmlAttributes={{ class: theme }}>
         <style>{fontawesome.dom.css()}</style>
       </Helmet>
-      <div className="max-w-2xl container my-10 px-5" data-is-root-path={isRootPath}>
+      <div
+        className="max-w-2xl container my-10 px-5"
+        data-is-root-path={isRootPath}
+      >
         <header className="mb-8 flex items-start">
           {header}
           {isRootPath && <ThemeToggleButton className="block shrink-0" />}
@@ -43,14 +48,14 @@ const Layout = ({ location, title, children }) => {
           &copy;
           {` `}
           <Link to="/">akihiro.dev</Link>
+          {` `}- {new Date().getFullYear()}, Built with
           {` `}
-          - {new Date().getFullYear()}, Built with
-          {` `}
-          <a
-            href="https://www.gatsbyjs.com"
-            className="text-primary underline"
-          >
+          <a href="https://www.gatsbyjs.com" className="text-primary underline">
             Gatsby
+          </a>
+          , powered by{" "}
+          <a href="https://vercel.com/" className="text-primary underline">
+            Vercel
           </a>
         </footer>
       </div>
