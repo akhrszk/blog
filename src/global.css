@@ -88,6 +88,10 @@
     @apply leading-6 mb-8;
   }
 
+  .markdown div.gatsby-highlight {
+    @apply mb-8;
+  }
+
   .markdown ul,
   .markdown ol {
     @apply mb-8 ml-8;
