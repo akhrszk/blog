@@ -5,16 +5,15 @@ import Bio from "../../components/bio"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Divider from "../../components/Divier"
-import Input from "../../components/Input"
-import Textarea from "../../components/Textarea"
+import RegexChecker from "../../components/RegexChecker"
 
-const title = "正規表現チェッカー"
+const PAGE_TITLE = "正規表現チェッカー"
 
-const RegexChecker = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || title
+const WebToolsRegex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || PAGE_TITLE
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={title} />
+      <Seo title={PAGE_TITLE} />
       <article
         className="blog-post"
         itemScope
@@ -22,21 +21,11 @@ const RegexChecker = ({ data, location }) => {
       >
         <header>
           <h1 className="text-4xl font-bold my-4" itemProp="headline">
-            {title}
+            {PAGE_TITLE}
           </h1>
         </header>
         <section class="my-6">
-          <div class="grid grid-flow-row-dense grid-cols-2 gap-x-2 gap-y-6">
-            <div class="col-span-2">
-              <Input label="正規表現" />
-            </div>
-            <div>
-              <Textarea label="検索対象の文字列" class="h-32" />
-            </div>
-            <div>
-              <Textarea label="検索結果" class="h-32" disabled />
-            </div>
-          </div>
+          <RegexChecker />
         </section>
       </article>
       <Divider />
@@ -47,7 +36,7 @@ const RegexChecker = ({ data, location }) => {
   )
 }
 
-export default RegexChecker
+export default WebToolsRegex
 
 export const pageQuery = graphql`
   query {
