@@ -7,17 +7,21 @@ date: "2022-04-18T22:48:52+0900"
 
 ![スクリーンショット](screenshot.gif)
 
-このエントリーでは、この問題を回避する方法を紹介します。環境は Gatsby です。
+このエントリーでは、この問題を回避する方法を紹介します。
 
-既に issue が上がっていたので、参考にします。
+このブログは Gatsby を使って実装されているので、Gatsby の GitHub のページを見に行きます。
+
+すると既に issue が上がっていたので、これを参考にします。
 
 [FortAwesome/react-fontawesome - Over sized icons on each page refresh #134](https://github.com/FortAwesome/react-fontawesome/issues/134)
 
-どうやら SSR（SSG）した時に起こるようで FontAwesome の CSS の読み込みのタイミングの問題のようです。
+どうやら FontAwesome の CSS の読み込みのタイミングの問題のようで、
 
-FontAwesome のスタイルシートをページに直接埋め込むことで解決するとのこと。:thinking:（詳しくは[こちらの公式ドキュメント](https://fontawesome.com/v5/docs/web/other-topics/server-side-rendering#css)）
+ページにスタイルシートを直接埋め込むことで解決するとのこと。:thinking:（詳しくは[こちらの公式ドキュメント](https://fontawesome.com/v5/docs/web/other-topics/server-side-rendering#css)）
 
-以下が私が行なった対応です :thumbsup:
+以下が私が行なった対応です
+
+[akhrszk/blog - :bug: Fix over size FontAwesomeIcon](https://github.com/akhrszk/blog/commit/b9fba5833dbb562af9fb10246acd8c9bdbcd216c)
 
 ```js
 import * as fontawesome from "@fortawesome/fontawesome-svg-core"
@@ -31,4 +35,4 @@ return (
 )
 ```
 
-[akhrszk/blog - :bug: Fix over size FontAwesomeIcon](https://github.com/akhrszk/blog/commit/b9fba5833dbb562af9fb10246acd8c9bdbcd216c)
+解決しました :tada:
