@@ -1,9 +1,10 @@
 import * as React from "react"
-import { useRef, useEffect, useReducer } from "react"
-import useRegexMatch from "../hooks/useRegexMatch"
+import { useReducer } from "react"
 import Divider from "./Divier"
 import Input from "./Input"
 import Textarea from "./Textarea"
+import useDebounce from "../hooks/useDebounce"
+import { useMemo } from "react"
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -26,13 +27,29 @@ const reducer = (state, action) => {
 const RegexChecker = () => {
   const [{ target, regex, flags }, dispatch] = useReducer(reducer, {})
 
-  const [match, update] = useRegexMatch()
-  const updateRef = useRef()
-  updateRef.current = update
+  const changed = useDebounce(300, [target, regex, flags?.join("")])
+  const match = useMemo(() => {
+    const [target, regex, flags] = changed
+    if (!regex) {
+      return []
+    }
+    const x = new RegExp(regex, flags)
+    try {
+      if (!flags?.includes("g")) {
+        const match = x.exec(target || "")
+        return match ? [match[0]] : []
+      }
 
-  useEffect(() => {
-    updateRef.current?.({ target, regex, flags: flags?.join("") })
-  }, [target, regex, flags])
+      let match = null
+      let acc = []
+      while ((match = x.exec(target || ""))) {
+        acc.push(match)
+      }
+      return acc.map(v => v[0])
+    } catch {
+      return []
+    }
+  }, changed)
 
   return (
     <div class="grid grid-flow-row-dense grid-cols-2 gap-x-2 gap-y-6">
