@@ -3,18 +3,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+const title = "About"
+
 const About = ({ data, location }) => {
   const { frontmatter, html, excerpt } = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `About`
+  const siteTitle = data.site.siteMetadata?.title || title
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={frontmatter.title} description={frontmatter.description || excerpt} />
+      <Seo title={title} description={frontmatter.description || excerpt} />
       <article>
         <header>
-          <h1
-            className="text-4xl font-bold my-4"
-            itemProp="headline"
-          >
+          <h1 className="text-4xl font-bold my-4" itemProp="headline">
             {frontmatter.title}
           </h1>
         </header>
