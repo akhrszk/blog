@@ -41,7 +41,7 @@ const TimeUtils = () => {
               dispatch({ type: "timezone", payload: e.target.value })
             }
             name="timezones"
-            options={Intl.supportedValuesOf("timeZone")}
+            options={timezones()}
           />
         </div>
       </div>
@@ -167,4 +167,11 @@ const reducer = (state, action) => {
         ...state,
       }
   }
+}
+
+const timezones = () => {
+  if (typeof Intl.supportedValuesOf === "undefined") {
+    return []
+  }
+  return Intl.supportedValuesOf("timeZone")
 }

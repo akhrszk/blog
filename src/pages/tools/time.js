@@ -5,7 +5,7 @@ import Bio from "../../components/bio"
 import Divider from "../../components/Divier"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import TimeUtils from "../../components/TiimeUtils"
+import TimeUtils from "../../components/TimeUtils"
 import NowTime from "../../components/NowTime"
 
 const PAGE_TITLE = "時間"
