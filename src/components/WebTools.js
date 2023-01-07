@@ -4,9 +4,22 @@ import React from "react"
 const WebTools = () => (
   <div>
     <h3 className="mb-3">Webツール</h3>
-    <ul>
-      <li className="text-primary font-semibold">
-        <Link to="/tools/regex" itemProp="url">
+    <ul className="list-disc pl-6">
+      <li>
+        <Link
+          className="text-primary font-semibold"
+          to="/tools/time"
+          itemProp="url"
+        >
+          時間
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="text-primary font-semibold"
+          to="/tools/regex"
+          itemProp="url"
+        >
           正規表現チェッカー
         </Link>
       </li>
