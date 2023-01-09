@@ -8,7 +8,7 @@ const WebTools = () => (
       <li>
         <Link
           className="text-primary font-semibold"
-          to="/tools/time"
+          to="/tools/time/"
           itemProp="url"
         >
           時間
@@ -17,7 +17,7 @@ const WebTools = () => (
       <li>
         <Link
           className="text-primary font-semibold"
-          to="/tools/regex"
+          to="/tools/regex/"
           itemProp="url"
         >
           正規表現チェッカー
