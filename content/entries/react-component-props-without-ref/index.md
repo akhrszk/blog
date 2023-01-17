@@ -8,7 +8,7 @@ date: "2022-08-20T20:46:57+0900"
 そんな時、使えるのが `React.ComponentPropsWithoutRef` です。
 
 ```tsx
-interface FancyButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+interface Props extends React.ComponentPropsWithoutRef<"button"> {
   colorful?: boolean
 }
 
