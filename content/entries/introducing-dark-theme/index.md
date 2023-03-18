@@ -1,5 +1,5 @@
 ---
-title: ブログに Dark Mode を実装
+title: Gatsbyで実装したブログにTailwind CSSを使ってDark Modeを実装する
 date: "2022-02-19T01:15:28+0900"
 ---
 

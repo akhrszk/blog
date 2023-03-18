@@ -17,3 +17,5 @@ export const FantasticList = <T,>({ items, renderItem }: Props<T>) => {
 ```
 
 アロー関数を使う場合、 `<T>` は使えず `<T,>` と書きます。 JSX のパーサーが上手く読んでくれないらしいです。 [https://github.com/microsoft/TypeScript/issues/15713#issuecomment-499474386](https://github.com/microsoft/TypeScript/issues/15713#issuecomment-499474386)
+
+※ 個人的にはジェネリクスのコンポーネントは読み辛いので、出来る限り作ることは避けるべきだと思います。
