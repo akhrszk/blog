@@ -3,7 +3,7 @@ module.exports = {
     title: `Tech Blog - Akihiro Suzuki`,
     author: {
       name: `鈴木 章弘 (Suzuki Akihiro)`,
-      summary: `フロントエンドだったりバックエンドだったり`,
+      summary: `サーバーサイドだったりフロントエンドだったり時々モバイルアプリ`,
       // Path to the image placed in the 'static' folder, in the project's root directory.
       pic: `/profile-pic.png`,
     },
