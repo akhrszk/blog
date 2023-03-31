@@ -1,5 +1,5 @@
 ---
-title: 【Cloudflare】GitHub Pagesにリバースプロキシしてカスタムドメインを設定する
+title: CloudflareでGitHubPagesにリバースプロキシしてカスタムドメインを設定する
 date: "2023-03-25T04:30:57+0900"
 ---
 
