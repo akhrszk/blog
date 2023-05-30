@@ -91,4 +91,4 @@ GitHug Pages へのデプロイには、[peaceiris/actions-gh-pages](https://git
 
 以上で GitHub Pages に公開する手順は終了です。
 
-[https://yourusername.github.io/yourrepo/](https://yourusername.github.io/yourrepo/) にアクセスするとページが表示されます :clap:
+`https://yourusername.github.io/yourrepo/` にアクセスするとページが表示されます :clap:
