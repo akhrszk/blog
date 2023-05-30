@@ -52,6 +52,7 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-emoji`,
+          `@weknow/gatsby-remark-twitter`,
           {
             resolve: "gatsby-remark-external-links",
             options: {
