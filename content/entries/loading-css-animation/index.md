@@ -16,6 +16,6 @@ date: "2023-06-13T22:41:44+0900"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-利用者に処理してますよーと伝えたいけど、インジケーターの gif などを用意する時間がない時、
+インジケーターを表示したいけど、 gif などを用意する時間がない時、
 
-CSS でささっと書くことが出来れば便利かも。
+CSS でささっと書くことが出来れば便利かもしれない。
